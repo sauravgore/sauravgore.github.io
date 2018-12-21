@@ -10,9 +10,90 @@
 	<script>
 		loadCSS("https://fonts.googleapis.com/css?family=Dosis:200,400");
 		loadCSS("https://fonts.googleapis.com/css?family=Raleway");
-		loadCSS("css/style.css")
 	</script>
 	<script type="text/javascript" src = "js/script.js"></script>
+	<style>
+		body,html {
+			padding: 0;
+			margin: 0;
+		}
+		#jumbo{
+			background-image: url(back.jpg); 
+			background-size: 115%;
+		}
+		.jumbotron{
+			align-items: center;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			width: 100%;
+			height: 100vh;
+		}
+
+		.name{
+			font-family: 'Dosis', sans-serif;
+			font-size: 90px;
+			color: white;
+			font-weight: 400;
+			margin-bottom: 10px;
+			text-align: center;
+			
+		}
+		.handle{
+			font-family: 'Dosis', sans-serif;
+			font-weight: 200;
+			font-size: 40px;
+			color: white;
+			margin-bottom: 50px;
+			text-align: center;
+		}
+
+		.navbar{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+
+		.navbar-item {
+			float: left;
+			display: inline;
+		}
+
+		.navbar-block {
+			display: block;
+			color: black;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 500;
+			font-size: 18px;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		  	padding-bottom: 3px;
+		  	color: #FFFFFF;
+		}
+
+		.navbar-block:after {
+			content: '';
+			display: block;
+			margin: auto;
+			margin-top: 2px;
+			height: 1px;
+			width: 0px;
+			background: white;
+			transition: width .2s linear;
+		}
+
+		.navbar-block:hover:after {
+			width: 96%;
+			background: white;
+		}
+
+		.resume {
+			font-size: 24px;
+			margin-bottom: 10px;
+		}
+	</style>
 </head>
 	<body>
 		<div class="jumbotron" id="jumbo">
